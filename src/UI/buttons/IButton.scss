@@ -1,0 +1,12 @@
+@import '../../styles/mixins';
+   
+.button {
+   margin-top: 21px;
+   width: 100%;
+   min-height: 50px;
+   background-color: $background;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   @include style (1.125rem, 100%, $textColor, inherit)
+}

@@ -1,0 +1,31 @@
+@import '../../styles/_mixins.scss';
+
+.partners {
+   &__content {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 68px;
+      row-gap: 58px;
+   }
+   &__wrapper {
+      margin-top: 100px;
+      padding: 0px 83px;
+   }
+   &__title {
+      margin-bottom: 58px;
+      text-align: center;
+   }
+}
+
+.partnerItem {
+   // max-width: 250px;
+   max-height: 250px;
+   background-color: $background;
+   padding: 16px;
+   font-size: 0.875rem;
+   &__logo {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 19px;
+   }
+}

@@ -1,0 +1,27 @@
+@import './null.scss';
+@import './mixins.scss';
+@import './variables.scss';
+@import './typography.scss';
+@import './fonts.scss';
+
+* {
+   transition: 0.3s all ease 0s;
+}
+html, body {
+   font-family: 'Roboto Slab', serif;
+   // font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+   line-height: normal;
+   font-weight: 400;
+	color: $textColor;
+}
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+}
+.container {
+   max-width: $screen-full;
+   padding: 0px 15px;
+   box-sizing: content-box;
+   margin: 0 auto;
+}

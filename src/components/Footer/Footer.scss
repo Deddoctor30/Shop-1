@@ -1,0 +1,88 @@
+@import '../../styles/_mixins.scss';
+
+.footer {
+   margin-top: 245px;
+   background-color: $background;
+   min-height: 186px;
+   &__wrapper {
+      padding: 26px 0 0 22px;
+   }
+}
+
+.contacts {
+   display: flex;
+   &__logo {
+   }
+
+   &__tel {
+      margin-top: 34px;
+   }
+
+   &__email {
+      margin-top: 18px;
+   }
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+   &__image {
+      background-color: $backgroundSecond;
+      width: 50px;
+      height: 50px;
+   }
+   
+   &__text {
+      margin-left: 16px;
+   }
+}
+
+.socials {
+   display: flex;
+   margin-left: 28px;
+   margin-right: 95px;
+   &>*:not(:last-child) {
+      margin-right: 12px;
+   }
+
+   &__item {
+      width: 30px;
+      height: 30px;
+      background-color: $backgroundSecond;
+   }
+}
+
+.work {
+   margin-right: 120px;
+   &__title {
+      font-weight: 700;
+      margin-bottom: 13px;
+   }
+   
+   &__items {
+      &>*:not(:last-child) {
+         margin-bottom: 8px;
+      }
+   }
+
+   &__item {
+      font-size: 0.875rem;
+   }
+}
+
+.time {
+   &__title {
+      font-weight: 700;
+      margin-bottom: 13px;
+   }
+   
+   &__items {
+      &>*:not(:last-child) {
+         margin-bottom: 8px;
+      }
+   }
+
+   &__item {
+      font-size: 0.875rem;
+   }
+}

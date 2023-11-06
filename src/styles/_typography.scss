@@ -1,0 +1,42 @@
+@import './mixins';
+
+h1 {
+   font-size: 4.25rem;
+   font-weight: 900; 
+
+   //  @include smMinBreakPoint {
+   //      font-size: 48px;
+   //  }
+}
+
+h2 {
+   font-size: 3rem;
+   font-weight: 900;
+}
+
+h3 { 
+   font-size: 1.5rem;
+
+   //  @include customMinBreakPoint(400) {
+   //      font-size: 18px;
+   //  }
+}
+
+h4 {
+   font-size: 1.125rem; 
+ }
+
+h5 {
+   font-size: 0.875rem;
+}
+
+p {
+}
+
+.typography__subhead {
+
+
+   //  @include smMinBreakPoint {
+   //      font-size: 26px;
+   //  }
+}
