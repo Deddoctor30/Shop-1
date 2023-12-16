@@ -1,6 +1,8 @@
 @import '../../styles/_mixins.scss';
-
 .partners {
+   &__clients {
+      margin-bottom: 100px;
+   }
    &__content {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -13,12 +15,9 @@
    }
    &__title {
       margin-bottom: 58px;
-      text-align: center;
    }
 }
-
 .partnerItem {
-   // max-width: 250px;
    max-height: 250px;
    background-color: $background;
    padding: 16px;

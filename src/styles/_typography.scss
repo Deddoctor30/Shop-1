@@ -3,7 +3,7 @@
 h1 {
    font-size: 4.25rem;
    font-weight: 900; 
-
+   text-align: center;
    //  @include smMinBreakPoint {
    //      font-size: 48px;
    //  }
@@ -12,11 +12,12 @@ h1 {
 h2 {
    font-size: 3rem;
    font-weight: 900;
+   text-align: center;
 }
 
 h3 { 
    font-size: 1.5rem;
-
+   font-weight: 700;
    //  @include customMinBreakPoint(400) {
    //      font-size: 18px;
    //  }

@@ -1,3 +1,6 @@
+import IButton from '../../UI/buttons/IButton';
+import Form from '../../components/Form/Form';
+import { Link } from "react-router-dom";
 import PartnerItem from '../../components/PartnerItem'
 import './Partners.scss';
 
@@ -10,20 +13,17 @@ const Partners = () => {
             <section className="partners__clients">
               <h2 className="partners__title">НАШИ РАБОТЫ</h2>
               <div className="partners__content">
-                <PartnerItem logo={''} text='Lorem ipsum dolor sit amet consectetur. Elementum malesuada amet mattis aenean sollicitudin habitasse tortor ut nulla. Commodo massa vitae lectus dictum id pretium pulvinar nullam nunc. Sapien tincidunt malesuada eu a eu...'/>
-                <PartnerItem logo={''} text='Lorem ipsum dolor sit amet consectetur. Elementum malesuada amet mattis aenean sollicitudin habitasse tortor ut nulla. Commodo massa vitae lectus dictum id pretium pulvinar nullam nunc. Sapien tincidunt malesuada eu a eu...'/>
-                <PartnerItem logo={''} text='Lorem ipsum dolor sit amet consectetur. Elementum malesuada amet mattis aenean sollicitudin habitasse tortor ut nulla. Commodo massa vitae lectus dictum id pretium pulvinar nullam nunc. Sapien tincidunt malesuada eu a eu...'/>
-                <PartnerItem logo={''} text='Lorem ipsum dolor sit amet consectetur. Elementum malesuada amet mattis aenean sollicitudin habitasse tortor ut nulla. Commodo massa vitae lectus dictum id pretium pulvinar nullam nunc. Sapien tincidunt malesuada eu a eu...'/>
-                <PartnerItem logo={''} text='Lorem ipsum dolor sit amet consectetur. Elementum malesuada amet mattis aenean sollicitudin habitasse tortor ut nulla. Commodo massa vitae lectus dictum id pretium pulvinar nullam nunc. Sapien tincidunt malesuada eu a eu...'/>
-                <PartnerItem logo={''} text='Lorem ipsum dolor sit amet consectetur. Elementum malesuada amet mattis aenean sollicitudin habitasse tortor ut nulla. Commodo massa vitae lectus dictum id pretium pulvinar nullam nunc. Sapien tincidunt malesuada eu a eu...'/>
-                <PartnerItem logo={''} text='Lorem ipsum dolor sit amet consectetur. Elementum malesuada amet mattis aenean sollicitudin habitasse tortor ut nulla. Commodo massa vitae lectus dictum id pretium pulvinar nullam nunc. Sapien tincidunt malesuada eu a eu...'/>
-                <PartnerItem logo={''} text='Lorem ipsum dolor sit amet consectetur. Elementum malesuada amet mattis aenean sollicitudin habitasse tortor ut nulla. Commodo massa vitae lectus dictum id pretium pulvinar nullam nunc. Sapien tincidunt malesuada eu a eu...'/>
+                <Link to='/partner'><PartnerItem logo={''} text='Lorem ipsum dolor sit amet consectetur. Elementum malesuada amet mattis aenean sollicitudin habitasse tortor ut nulla. Commodo massa vitae lectus dictum id pretium pulvinar nullam nunc. Sapien tincidunt malesuada eu a eu...'/></Link>
+                <Link to='/partner'><PartnerItem logo={''} text='Lorem ipsum dolor sit amet consectetur. Elementum malesuada amet mattis aenean sollicitudin habitasse tortor ut nulla. Commodo massa vitae lectus dictum id pretium pulvinar nullam nunc. Sapien tincidunt malesuada eu a eu...'/></Link>
+                <Link to='/partner'><PartnerItem logo={''} text='Lorem ipsum dolor sit amet consectetur. Elementum malesuada amet mattis aenean sollicitudin habitasse tortor ut nulla. Commodo massa vitae lectus dictum id pretium pulvinar nullam nunc. Sapien tincidunt malesuada eu a eu...'/></Link>
+                <Link to='/partner'><PartnerItem logo={''} text='Lorem ipsum dolor sit amet consectetur. Elementum malesuada amet mattis aenean sollicitudin habitasse tortor ut nulla. Commodo massa vitae lectus dictum id pretium pulvinar nullam nunc. Sapien tincidunt malesuada eu a eu...'/></Link>
+                <Link to='/partner'><PartnerItem logo={''} text='Lorem ipsum dolor sit amet consectetur. Elementum malesuada amet mattis aenean sollicitudin habitasse tortor ut nulla. Commodo massa vitae lectus dictum id pretium pulvinar nullam nunc. Sapien tincidunt malesuada eu a eu...'/></Link>
+                <Link to='/partner'><PartnerItem logo={''} text='Lorem ipsum dolor sit amet consectetur. Elementum malesuada amet mattis aenean sollicitudin habitasse tortor ut nulla. Commodo massa vitae lectus dictum id pretium pulvinar nullam nunc. Sapien tincidunt malesuada eu a eu...'/></Link>
+                <Link to='/partner'><PartnerItem logo={''} text='Lorem ipsum dolor sit amet consectetur. Elementum malesuada amet mattis aenean sollicitudin habitasse tortor ut nulla. Commodo massa vitae lectus dictum id pretium pulvinar nullam nunc. Sapien tincidunt malesuada eu a eu...'/></Link>
+                <Link to='/partner'><PartnerItem logo={''} text='Lorem ipsum dolor sit amet consectetur. Elementum malesuada amet mattis aenean sollicitudin habitasse tortor ut nulla. Commodo massa vitae lectus dictum id pretium pulvinar nullam nunc. Sapien tincidunt malesuada eu a eu...'/></Link>
               </div>
             </section>
-            <section className="partners__work">
-              <h2>Давайте начнём работу!</h2>
-              
-            </section>
+            <Form/>
           </div>
         </div>
       </div>

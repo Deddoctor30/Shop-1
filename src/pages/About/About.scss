@@ -1,0 +1,76 @@
+@import '../../styles/_mixins.scss';
+
+.about {
+   &__content {
+      margin-top: 110px;
+   }
+   &__title {
+      margin-bottom: 31px;
+   }
+   &__subtitle {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 81px;
+   }
+}
+.purpose {
+   display: flex;
+   column-gap: 191px;
+   margin-bottom: 101px;
+}
+.target {
+   &__title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 13px;
+   }
+   &__text {
+      font-size: 1.125rem;
+   }
+}
+.tasks {
+   &__title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 13px;
+   }
+   &__text {
+      font-size: 1.125rem;
+   }
+}
+.mission {
+   &__title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 13px;
+   }
+   &__text {
+      font-size: 1.125rem;
+   }
+}
+.results {
+   margin-bottom: 100px;
+   &__title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 25px;
+      text-align: center;
+   }
+   &__present {
+      background-color: $background;
+      display: flex;
+      justify-content: space-between;
+      padding: 77px 101px;
+      text-align: center;
+   }
+   &__item {
+      width: 205px;
+   }
+   &__main {
+      font-size: 4.5rem;
+      font-weight: 700;
+   }
+   &__text {
+      font-size: 1.125rem;
+   }
+}

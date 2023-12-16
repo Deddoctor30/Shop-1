@@ -1,0 +1,43 @@
+@import '../../styles/_mixins.scss';
+
+.price {
+   margin-top: 168px;
+   &__content {
+   }
+
+   &__title {
+      margin-bottom: 71px;
+      text-align: center;
+   }
+
+   &__subtitle {
+      margin-bottom: 31px;
+   }
+
+   &__price-in {
+   }
+
+   &__list {
+      position: relative;
+      top: 5px;
+      left: 27px;
+      margin-bottom: 50px;
+   }
+
+   &__item {
+      list-style-type: disc;
+   }
+   &__total {
+      font-weight: 700;
+   }
+   &__btn {
+      margin-bottom: 50px;
+      min-width: 280px;
+      min-height: 50px;
+      background-color: $background;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include style (1.125rem, 100%, $textColor, inherit)
+   }
+}
