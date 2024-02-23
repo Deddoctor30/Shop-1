@@ -1,7 +1,5 @@
 import { useState, useRef, FC } from 'react';
 import { Link } from "react-router-dom";
-
-import { CalculationContext } from '../../App';
 import './Calculation.scss'
 
 //Caruosel
@@ -16,7 +14,6 @@ interface CalculationProps {
 }
 
 const Calculation: FC<CalculationProps> = ({calc}) => {
-
   const swiperRef = useRef<any>();
   const [currentSlide, setCurrentSlide] = useState(1)
   const [pages, setPages] = useState('0'); 
@@ -38,6 +35,7 @@ const Calculation: FC<CalculationProps> = ({calc}) => {
      })
     }
   }
+
   const checkboxHandler = (position: number) => {
     const updatedCheckedState = func.map((item, index) =>
       index === position ? !item : item
@@ -45,7 +43,6 @@ const Calculation: FC<CalculationProps> = ({calc}) => {
     setFunc(updatedCheckedState)
     
   }
-  
 
   return (
     <div className='calculation'>

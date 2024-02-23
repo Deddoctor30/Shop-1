@@ -4,40 +4,47 @@ h1 {
    font-size: 4.25rem;
    font-weight: 900; 
    text-align: center;
-   //  @include smMinBreakPoint {
-   //      font-size: 48px;
-   //  }
+    @include lgMinBreakPoint {
+        font-size: 3.25rem;
+    }
+    @include smMinBreakPoint {
+        font-size: 2.25rem;
+    }
 }
 
 h2 {
    font-size: 3rem;
    font-weight: 900;
    text-align: center;
+   @include lgMinBreakPoint {
+      font-size: 2.25rem;
+  }
+   @include smMinBreakPoint {
+      font-size: 1.5rem;
+  }
 }
 
 h3 { 
    font-size: 1.5rem;
    font-weight: 700;
-   //  @include customMinBreakPoint(400) {
-   //      font-size: 18px;
-   //  }
+   @include lgMinBreakPoint {
+      font-size: 1.125rem;
+  }
+   @include smMinBreakPoint {
+      font-size: 1rem;
+  }
 }
 
 h4 {
    font-size: 1.125rem; 
+   @include lgMinBreakPoint {
+      font-size: 1rem;
+  }
+   @include smMinBreakPoint {
+      font-size: 0.875rem;
+  }
  }
 
 h5 {
    font-size: 0.875rem;
-}
-
-p {
-}
-
-.typography__subhead {
-
-
-   //  @include smMinBreakPoint {
-   //      font-size: 26px;
-   //  }
 }

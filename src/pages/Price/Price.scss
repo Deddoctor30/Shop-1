@@ -2,28 +2,19 @@
 
 .price {
    margin-top: 168px;
-   &__content {
-   }
-
    &__title {
       margin-bottom: 71px;
       text-align: center;
    }
-
    &__subtitle {
       margin-bottom: 31px;
    }
-
-   &__price-in {
-   }
-
    &__list {
       position: relative;
       top: 5px;
       left: 27px;
       margin-bottom: 50px;
    }
-
    &__item {
       list-style-type: disc;
    }

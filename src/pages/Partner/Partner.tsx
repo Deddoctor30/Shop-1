@@ -1,6 +1,5 @@
 import './Partner.scss'
 import Form from "../../components/Form/Form"
-import IButton from '../../UI/buttons/IButton'
 
 const Partner = () => {
   return (

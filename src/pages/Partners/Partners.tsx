@@ -1,9 +1,7 @@
-import IButton from '../../UI/buttons/IButton';
 import Form from '../../components/Form/Form';
 import { Link } from "react-router-dom";
 import PartnerItem from '../../components/PartnerItem'
 import './Partners.scss';
-
 
 const Partners = () => {
   return (

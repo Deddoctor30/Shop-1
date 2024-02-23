@@ -3,20 +3,35 @@
    margin-top: 100px;
    background-color: $background;
    min-height: 186px;
+   padding-bottom: 20px;
    &__wrapper {
       padding: 26px 0 0 22px;
    }
 }
 .contacts {
    display: flex;
+   flex-wrap: wrap;
+   @media(max-width: 1101px) {
+      justify-content: center;
+      row-gap: 30px;
+      column-gap: 10px;
+   }
    &__tel {
       margin-top: 34px;
    }
    &__email {
       margin-top: 18px;
    }
+   &__inner {
+      @media(max-width: 1101px) {
+         flex: 0 1 40%;
+      }
+      @media(max-width: 700px) {
+         flex: 0 1 100%;
+      }
+   }
 }
-.logo {
+.logos {
    display: flex;
    align-items: center;
    &__image {
@@ -28,7 +43,6 @@
       margin-left: 16px;
    }
 }
-
 .socials {
    display: flex;
    margin-left: 28px;
@@ -36,15 +50,33 @@
    &>*:not(:last-child) {
       margin-right: 12px;
    }
+   @media(max-width: 1101px) {
+      flex: 0 1 40%;
+      margin-left: 0px;
+      margin-right: 0px;
+   }
+   @media(max-width: 700px) {
+      flex: 0 1 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+   }
    &__item {
       width: 30px;
       height: 30px;
       background-color: $backgroundSecond;
    }
 }
-
 .work {
    margin-right: 120px;
+   display: block;
+   @media(max-width: 1101px) {
+      flex: 0 1 40%;
+      margin-right: 0px;
+   }
+   @media(max-width: 700px) {
+      flex: 0 1 100%;
+      margin-right: 0px;
+   }
    &__title {
       font-weight: 700;
       margin-bottom: 13px;
@@ -59,6 +91,12 @@
    }
 }
 .time {
+   @media(max-width: 1101px) {
+      flex: 0 1 40%;
+   }
+   @media(max-width: 700px) {
+      flex: 0 1 100%;
+   }
    &__title {
       font-weight: 700;
       margin-bottom: 13px;

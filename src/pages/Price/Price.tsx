@@ -68,9 +68,6 @@ const Price = () => {
     const formPrice: string = 
     `${params?.functions[0] ? 'Дизайн макет;' : ''} ${params?.functions[1] ? `Верстка ${currentPages} страниц сайта;` : ''} ${params?.functions[2] ? 'Подключение к CRM;' : ''} ${params?.functions[3] ? 'Наличие онлайн оплаты;' : ''} ${params?.functions[4] ? 'Наличие приложения;' : ''}`
 
-    console.log(formPrice);
-    
-
   return (
     <div className="price">
       <div className="container">

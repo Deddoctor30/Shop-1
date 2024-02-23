@@ -4,7 +4,7 @@ import Home from "./pages/Home/Home";
 import Partners from "./pages/Partners/Partners";
 import Cases from "./pages/Cases/Cases";
 import About from "./pages/About/About";
-import NoMatch from "./pages/NoMatch";
+import NoMatch from "./pages/NoMatch/NoMatch";
 import Calculation from "./pages/Calculation/Calculation";
 import Price from "./pages/Price/Price";
 import Partner from "./pages/Partner/Partner";

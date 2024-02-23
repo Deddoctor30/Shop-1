@@ -1,18 +1,25 @@
 @import '../../styles/_mixins.scss';
+// @import './mixins';
 
 .home {
-   margin-top: 302px;
+   height: calc(100vh - 90px - 286px);
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   margin-bottom: 245px;
 }
 
 .title {
    width: 454px;
    display: flex;
    flex-direction: column;
+   overflow: hidden;
+   @include lgMinBreakPoint {
+      width: 354px;
+  }
+   @include smMinBreakPoint {
+      width: 254px;
+  }
 
    &__lineRight {
       position: relative;

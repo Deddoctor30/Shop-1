@@ -1,12 +1,16 @@
 @import '../../styles/_mixins.scss';
 
 .form {
+   overflow: hidden;
    &__title {
       text-align: center;
       margin-bottom: 30px;
    }
    &__wrapper {
       display: flex;
+      @include xlMinBreakPoint {
+         flex-direction: column;
+     }
    }
    &__contacts {
       width: 100%;
@@ -41,6 +45,9 @@
 }
 .inputs {
    min-width: 730px;
+   @include lgMinBreakPoint {
+      min-width: inherit;
+  }
    &__inner {
       display: flex;
       justify-content: space-between;
@@ -49,7 +56,16 @@
       margin-bottom: 25px;
       input {
          width: 350px;
+         @include lgMinBreakPoint {
+            width: 100%;
+        }
       }
+      @include xlMinBreakPoint {
+       margin-top: 30px;
+      }
+      @include lgMinBreakPoint {
+         flex-direction: column;
+     }
    }
    &__input {
       display: inline-block;
@@ -116,6 +132,11 @@
    &__buttons {
       display: flex;
       justify-content: space-between;
+      @include lgMinBreakPoint {
+         margin-top: 30px;
+         flex-direction: column;
+         align-items: center;
+     }
    }
    &__error {
       display: block;

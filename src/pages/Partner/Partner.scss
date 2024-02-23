@@ -2,40 +2,35 @@
 
 .partner {
    margin-top: 101px;
-   &__content {
-   }
-
    &__title {
       text-align: center;
    }
-
    &__subtitle {
       margin-top: 33px;
       margin-bottom: 39px;
       text-align: center;
       font-weight: 700;
    }
-
    &__info {
       text-align: center;
    }
-
    &__list {
       margin-bottom: 66px;
       display: flex;
-      column-gap: 30px;
+      gap: 30px;
       justify-content: center;
+      flex-wrap: wrap;
    }
-
-   &__item {
-   }
-
    &__result {
       margin-bottom: 104px;
       text-align: center;
       position: relative;
+      padding-top: 56.25%;
       img {
-         height: 570px;
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
          filter: blur(5px);
       }
    }

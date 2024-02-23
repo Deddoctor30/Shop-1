@@ -11,14 +11,29 @@
       font-size: 2rem;
       text-align: center;
       margin-bottom: 81px;
+      @include lgMinBreakPoint {
+         font-size: 1.5rem;
+     }
+      @include smMinBreakPoint {
+         font-size: 1rem;
+     }
    }
 }
 .purpose {
    display: flex;
-   column-gap: 191px;
+   column-gap: 13.6% ;
    margin-bottom: 101px;
+   &>*:not(:last-child) {
+      @include lgMinBreakPoint {
+         margin-bottom: 30px;
+     }
+   }
+   @include lgMinBreakPoint {
+      flex-direction: column;
+  }
 }
 .target {
+
    &__title {
       font-size: 1.5rem;
       font-weight: 700;
@@ -62,6 +77,10 @@
       justify-content: space-between;
       padding: 77px 101px;
       text-align: center;
+      @include lgMinBreakPoint {
+         flex-direction: column;
+         align-items: center;
+     }
    }
    &__item {
       width: 205px;

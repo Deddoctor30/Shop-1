@@ -10,7 +10,6 @@ const Home = () => {
           <h4 className="title__lineRight">Веб-сайтов</h4>
           <h2>АВТОМАТИЗАЦИЯ</h2>
           <h4 className="title__lineLeft">Бизнес-процессов</h4>
-          {/* <button className="title__button">ДЕЛАЕМ!</button> */}
           <IButton content={'ДЕЛАЕМ!'}/>
         </div>
       </div>

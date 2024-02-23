@@ -7,9 +7,9 @@ const Footer = () => {
         <div className="footer__wrapper">
           <div className="footer__contacts contacts">
             <div className="contacts__inner">
-              <div className="contacts__logos logos">
-                <div className="logos__image"></div>
-                <div className="logos__text">M-WEB</div>
+              <div className="contacts__logo logo">
+                <div className="logo__image"></div>
+                <div className="logo__text">M-WEB</div>
               </div>
               <div className="contacts__tel">+7(904) 806-64-24</div>
               <div className="contacts__email">mwebsites74@gmail.com</div>

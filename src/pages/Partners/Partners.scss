@@ -8,17 +8,29 @@
       grid-template-columns: repeat(4, 1fr);
       column-gap: 68px;
       row-gap: 58px;
+      @include xlMinBreakPoint {
+         grid-template-columns: repeat(3, 1fr);
+     }
+      @include lgMinBreakPoint {
+         grid-template-columns: repeat(2, 1fr);
+     }
+      @include mdMinBreakPoint {
+         grid-template-columns: repeat(1, 1fr);
+         row-gap: 30px;
+     }
    }
    &__wrapper {
       margin-top: 100px;
       padding: 0px 83px;
+      @include mdMinBreakPoint {
+         padding: 0px 15px;
+     }
    }
    &__title {
       margin-bottom: 58px;
    }
 }
 .partnerItem {
-   max-height: 250px;
    background-color: $background;
    padding: 16px;
    font-size: 0.875rem;
