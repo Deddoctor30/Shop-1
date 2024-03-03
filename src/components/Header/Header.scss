@@ -10,9 +10,17 @@
    @include smMinBreakPoint {
       justify-content: center;
   }
+  @media (max-width: 800px) {
+      align-items: flex-start;
+   }
    &__nav {
       flex: 0 1 33.33%;
-
+      @media (max-width: 800px) {
+         display: none;
+      }
+   }
+   &__nav-burger {
+      display: block;
    }
    &__items {
       display: flex;
@@ -21,6 +29,13 @@
       @include smMinBreakPoint {
          gap: 10px;
      }
+     @media (max-width: 800px) {
+      display: block;
+      position: sticky;
+         &>*:not(:last-child) {
+            margin-bottom: 20px;
+         }
+      }
    }
    &__item {
       width: 100%;
@@ -34,9 +49,6 @@
 }
 .logo {
    flex: 0 1 33.33%;
-      @include smMinBreakPoint {
-         display: none;
-     }
    &__inner {
       width: 50px;
       height: 50px;
@@ -47,12 +59,47 @@
    flex: 0 1 33.33%;
    display: flex;
    justify-content: end;
-   @media (max-width: 800px) {
-      display: none;
-   }
    &__inner {
       width: 212px;
       height: 50px;
       background-color: $background;
+      @media (max-width: 800px) {
+         display: none;
+      }
    }
+}
+.nav-btn {
+   margin-top: 13px;
+   width: 30px;
+   height: 20px;
+   position: relative;
+   @media (min-width: 800px) {
+      display: none;
+   }
+}
+.nav-btn::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 30px;
+ height: 2px;
+ background-color: $workColor;
+}
+.nav-btn::after {
+ content: "";
+ position: absolute;
+ top: 20px;
+ left: 0;
+ width: 30px;
+ height: 2px;
+ background-color: $workColor;
+}
+.nav-btn span {
+   position: absolute;
+   top: 10px;
+   left: 0;
+   width: 30px;
+   height: 2px;
+   background-color: $workColor;
 }

@@ -6,6 +6,12 @@
       padding: 0px 83px;
       @include lgMinBreakPoint {
          margin-top: 68px;
+      }
+      @include mdMinBreakPoint {
+         padding: 0px 33px;
+      }
+      @include smMinBreakPoint {
+         padding: 0px 13px;
      }
    }
    &__wrapper {
@@ -32,12 +38,16 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 357px;
+      min-width: 357px;
       min-height: 91px;
       background-color: $background;
+      @include lgMinBreakPoint {
+         justify-content: center;
+         margin: 0 auto;
+         min-width: 100%;
+     }
    }
 }
-
 .info {
    overflow: hidden;
    &__subtitle {
